@@ -8,9 +8,9 @@ function App() {
 
   return (
     <>
-      <div className='min-h-[100vh] bg-pink-200'>
-        <Background number={1}/>
+      <div className='min-h-[100vh] bg-pink-200'>        
         <Week1 />
+        <Background number={1}/>
       </div> 
     </>
   )
