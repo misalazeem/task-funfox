@@ -30,8 +30,7 @@ const Week1 = () => {
           </div>
           <Paragraph text="You must be familiar with some of these. If not, do not worry! we will cover all these elements as we go along."/>
           <Box2 />          
-        </div>
-        <Footer />
+        </div>        
       </div>
     </>
   );

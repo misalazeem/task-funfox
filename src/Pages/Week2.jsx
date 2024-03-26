@@ -40,7 +40,6 @@ const Week2 = () => {
           <Box3 bgColor="#25A3A1" border="dotted" borderColor="#A4FDFB" image1={ClockLittle} image2={HomeLittle} />
           <Paragraph text="The time of the story could be in the past, future, day, night, summer or winter. A story may take place in a school, a mall, a desert, an airplane or in a variety of other places." />
         </div>
-        <Footer />
     </div>
     </>
   );
