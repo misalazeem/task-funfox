@@ -11,7 +11,7 @@ const Navigation = ({ handleLeftButtonClick, handleRightButtonClick, handleNavig
   return (
     <div className="flex flex-row items-center justify-center">
       <Button image={ToggleLeft} onClick={handleLeftButtonClick} disabled={isLeftDisabled} />
-      <Select handleNavigation={handleNavigation} options={availableWeeks} />
+      <Select handleNavigation={handleNavigation} options={availableWeeks} currentWeek={currentWeek} />
       <Button image={ToggleRight} onClick={handleRightButtonClick} disabled={isRightDisabled} />
     </div>
   );

@@ -38,8 +38,8 @@ function App() {
 
   return (
     <div className='min-h-[100vh] bg-pink-200'>
-      {renderWeekComponent()}
       <Background number={getBackgroundNumber()} />
+      {renderWeekComponent()}      
       <Footer handleNavigation={handleNavigation} availableWeeks={availableWeeks} currentWeek={currentWeek}/>
     </div>
   );

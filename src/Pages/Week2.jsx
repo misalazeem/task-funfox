@@ -12,7 +12,7 @@ import HomeImage from "/images/home.png";
 import Box3 from "../components/Box3";
 import ClockLittle from "/images/clocklittle.png";
 import HomeLittle from "/images/homelittle.png";
-import Footer from "../components/Footer";
+import ModalButton from "/images/modalbutton.png"
 
 const Week2 = () => {
   return (
@@ -40,6 +40,9 @@ const Week2 = () => {
           <Box3 bgColor="#25A3A1" border="dotted" borderColor="#A4FDFB" image1={ClockLittle} image2={HomeLittle} />
           <Paragraph text="The time of the story could be in the past, future, day, night, summer or winter. A story may take place in a school, a mall, a desert, an airplane or in a variety of other places." />
         </div>
+    </div>
+    <div className="absolute 2xl:top-[65%] right-[15px] lg:top-[65%] right-[15px] sm:top-[43%] right-[10px]">
+      <Button image={ModalButton} disabled={false}/>
     </div>
     </>
   );
