@@ -1,4 +1,4 @@
-import React from "react";
+import PropTypes from "prop-types";
 import Button from "../Button/Button";
 import LeftButton from "/images/buttonleft.png";
 import RightButton from "/images/buttonright.png";
@@ -26,5 +26,11 @@ const Footer = ({handleNavigation, availableWeeks, currentWeek}) => {
     </div>
   );
 }
+
+Footer.propTypes = {
+  handleNavigation: PropTypes.func.isRequired,
+  currentWeek: PropTypes.string.isRequired,
+  availableWeeks: PropTypes.arrayOf(PropTypes.string).isRequired
+};
 
 export default Footer;

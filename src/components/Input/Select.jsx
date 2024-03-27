@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
+import PropTypes from 'prop-types';
 
 const Select = ({ handleNavigation, options, currentWeek }) => {
   const currentWeekNumber = parseInt(currentWeek.replace("Week ", ""));
@@ -6,7 +7,7 @@ const Select = ({ handleNavigation, options, currentWeek }) => {
 
   useEffect(() => {
     setSelectedValue(currentWeekNumber);
-  }, [currentWeek]);
+  }, [currentWeek, currentWeekNumber]);
 
   const handleChange = (event) => {
     const selectedWeek = "Week " + event.target.value;
@@ -31,6 +32,12 @@ const Select = ({ handleNavigation, options, currentWeek }) => {
       </select>
     </>
   );
+};
+
+Select.propTypes = {
+  handleNavigation: PropTypes.func.isRequired,
+  options: PropTypes.array.isRequired,
+  currentWeek: PropTypes.string.isRequired,
 };
 
 export default Select;

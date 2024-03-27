@@ -1,4 +1,4 @@
-import React from "react";
+import PropTypes from "prop-types";
 
 const Cloud = ({text, image}) => {
   return (
@@ -8,5 +8,10 @@ const Cloud = ({text, image}) => {
     </div>
   );
 }
+
+Cloud.propTypes = {
+  text: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
+};
 
 export default Cloud;

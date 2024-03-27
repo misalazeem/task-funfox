@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Heading2 from "../components/Heading/Heading2";
 import Paragraph from "../components/Paragraph/Paragraph";
 import Paragraph2 from "../components/Paragraph/Paragraph2";
@@ -36,7 +36,7 @@ const Week2 = () => {
             <Card image={Image} text="Sunny day at a beach"/>
             <Card image={Image1} text="A cold rainy night in a haunted house in October"/>
           </div>
-          <Paragraph2 text="So, what do you think the definition of setting is?"/>
+          <Paragraph2 fontColor="#1E242F" text="So, what do you think the definition of setting is?"/>
           <div className="flex flex-row items-center">
             <Paragraph2 fontColor="#1E242F" text="Any guesses?" />
             <Input />

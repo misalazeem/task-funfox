@@ -1,4 +1,4 @@
-import React from "react";
+import PropTypes from "prop-types";
 import Button from "../Button/Button";
 import ToggleLeft from "/images/toggleleft.png";
 import ToggleRight from "/images/toggleright.png";
@@ -16,5 +16,13 @@ const Navigation = ({ handleLeftButtonClick, handleRightButtonClick, handleNavig
     </div>
   );
 }
+
+Navigation.propTypes = {
+  handleLeftButtonClick: PropTypes.func.isRequired,
+  handleRightButtonClick: PropTypes.func.isRequired,
+  handleNavigation: PropTypes.func.isRequired,
+  availableWeeks: PropTypes.arrayOf(PropTypes.string).isRequired,
+  currentWeek: PropTypes.string.isRequired,
+};
 
 export default Navigation;

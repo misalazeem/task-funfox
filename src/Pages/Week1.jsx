@@ -1,4 +1,3 @@
-import React from "react";
 import Heading from "../components/Heading/Heading";
 import Box from "../components/Box/Box";
 import boxImage from '/images/box.png'

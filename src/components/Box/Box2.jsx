@@ -1,7 +1,6 @@
-import React from "react";
 import Paragraph from "../Paragraph/Paragraph";
 
-const Box2 = ({text}) => {
+const Box2 = () => {
   return (
     <>
       <div className="w-full bg-rose-400 px-4 pt-2 pb-4 my-2 rounded-2xl shadow-xl">

@@ -1,4 +1,4 @@
-import React from "react";
+import PropTypes from "prop-types";
 import Paragraph2 from "./Paragraph/Paragraph2";
 import Input from "./Input/Input";
 import Button from "./Button/Button";
@@ -37,6 +37,11 @@ const Modal = ({ isOpen, onClose }) => {
       )}
     </>
   );
+};
+
+Modal.propTypes = {
+  isOpen: PropTypes.func.isRequired,
+  onClose: PropTypes.func.isRequired
 };
 
 export default Modal;

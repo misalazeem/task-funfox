@@ -1,4 +1,4 @@
-import React from "react";
+import PropTypes from "prop-types";
 
 const Button = ({ image, onClick, disabled }) => {
   const handleClick = () => {
@@ -13,5 +13,11 @@ const Button = ({ image, onClick, disabled }) => {
     </button>
   );
 }
+
+Button.propTypes = {
+  image: PropTypes.string,
+  onClick: PropTypes.func,
+  disabled: PropTypes.bool, 
+};
 
 export default Button;

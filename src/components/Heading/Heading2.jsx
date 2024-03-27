@@ -1,4 +1,4 @@
-import React from "react";
+import PropTypes from "prop-types";
 
 const Heading2 = ({text}) => {
     return (
@@ -10,5 +10,9 @@ const Heading2 = ({text}) => {
     </>
   );
 }
+
+Heading2.propTypes = {
+  text: PropTypes.string.isRequired,
+};
 
 export default Heading2;

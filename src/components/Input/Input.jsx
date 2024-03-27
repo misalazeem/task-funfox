@@ -1,4 +1,4 @@
-import React from "react";
+import PropTypes from "prop-types";
 
 const Input = ({ fontColor, placeholder, bgColor }) => {
   const inputStyle = {
@@ -12,5 +12,11 @@ const Input = ({ fontColor, placeholder, bgColor }) => {
     </div>
   );
 }
+
+Input.propTypes = {
+  bgColor: PropTypes.string,
+  placeholder: PropTypes.string,
+  fontColor: PropTypes.string,
+};
 
 export default Input;
