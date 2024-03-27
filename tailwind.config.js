@@ -1,8 +1,16 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [],
+  content: [
+    './src/**/*.{js,jsx,ts,tsx}',
+  ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'background': "url('/images/background.png')",
+        'box-bg': "url('/images/boxbg.png')",
+        logo: "url('/images/assets/zlogo.png')",
+      },
+    },
   },
   plugins: [],
 }
