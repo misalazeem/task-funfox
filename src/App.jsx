@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import Background from './components/Background';
-import Footer from './components/Footer';
+import Footer from './components/Navigation/Footer';
 import Week1 from './Pages/Week1';
 import Week2 from './Pages/Week2';
 

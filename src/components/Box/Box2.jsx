@@ -1,5 +1,5 @@
 import React from "react";
-import Paragraph from "./Paragraph";
+import Paragraph from "../Paragraph/Paragraph";
 
 const Box2 = ({text}) => {
   return (

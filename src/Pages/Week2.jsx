@@ -1,20 +1,31 @@
-import React from "react";
-import Heading2 from "../components/Heading2";
-import Paragraph from "../components/Paragraph";
-import Paragraph2 from "../components/Paragraph2";
-import Button from "../components/Button";
+import React, { useState } from "react";
+import Heading2 from "../components/Heading/Heading2";
+import Paragraph from "../components/Paragraph/Paragraph";
+import Paragraph2 from "../components/Paragraph/Paragraph2";
+import Button from "../components/Button/Button";
 import Image from "/images/image1.png"
 import Image1 from "/images/image2.png"
 import Card from "../components/Card";
-import Input from "../components/Input";
+import Input from "../components/Input/Input";
 import Clock from "/images/clock.png";
 import HomeImage from "/images/home.png";
-import Box3 from "../components/Box3";
+import Box3 from "../components/Box/Box3";
 import ClockLittle from "/images/clocklittle.png";
 import HomeLittle from "/images/homelittle.png";
 import ModalButton from "/images/modalbutton.png"
+import Modal from "../components/Modal";
 
 const Week2 = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <>
       <div className="flex flex-col pt-24 mx-20">
@@ -27,9 +38,9 @@ const Week2 = () => {
           </div>
           <Paragraph2 text="So, what do you think the definition of setting is?"/>
           <div className="flex flex-row items-center">
-            <Paragraph2 text="Any guesses?" />
+            <Paragraph2 fontColor="#1E242F" text="Any guesses?" />
             <Input />
-            <Paragraph2 text="Hint: " />
+            <Paragraph2 fontColor="#1E242F" text="Hint: " />
             <div className="flex-grow">
               <div className="flex flex-row justify-between">
                 <Button image={Clock}/>
@@ -42,8 +53,9 @@ const Week2 = () => {
         </div>
     </div>
     <div className="absolute 2xl:top-[65%] right-[15px] lg:top-[65%] right-[15px] sm:top-[43%] right-[10px]">
-      <Button image={ModalButton} disabled={false}/>
+      <Button image={ModalButton} onClick={openModal} disabled={false}/>
     </div>
+    <Modal isOpen={isModalOpen} onClose={closeModal} />
     </>
   );
 }

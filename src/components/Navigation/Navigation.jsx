@@ -1,8 +1,8 @@
 import React from "react";
-import Button from "./Button";
+import Button from "../Button/Button";
 import ToggleLeft from "/images/toggleleft.png";
 import ToggleRight from "/images/toggleright.png";
-import Select from "./Select";
+import Select from "../Input/Select";
 
 const Navigation = ({ handleLeftButtonClick, handleRightButtonClick, handleNavigation, availableWeeks, currentWeek }) => {
   const isLeftDisabled = availableWeeks.indexOf(currentWeek) === 0;

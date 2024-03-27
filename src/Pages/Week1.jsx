@@ -1,6 +1,6 @@
 import React from "react";
-import Heading from "../components/Heading";
-import Box from "../components/Box";
+import Heading from "../components/Heading/Heading";
+import Box from "../components/Box/Box";
 import boxImage from '/images/box.png'
 import Cloud from "../components/Cloud";
 import cloudImage from "/images/cloud.png"
@@ -8,9 +8,8 @@ import cloudImage1 from "/images/cloud1.png"
 import cloudImage2 from "/images/cloud2.png"
 import cloudImage3 from "/images/cloud3.png"
 import cloudImage4 from "/images/cloud4.png"
-import Paragraph from "../components/Paragraph";
-import Box2 from "../components/Box2";
-import Footer from "../components/Footer";
+import Paragraph from "../components/Paragraph/Paragraph";
+import Box2 from "../components/Box/Box2";
 const heading = "Elements of Story Writing";
 
 const Week1 = () => { 

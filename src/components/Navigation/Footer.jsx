@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "./Button";
+import Button from "../Button/Button";
 import LeftButton from "/images/buttonleft.png";
 import RightButton from "/images/buttonright.png";
 import Navigation from "./Navigation";

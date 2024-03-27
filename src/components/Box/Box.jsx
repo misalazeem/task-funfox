@@ -1,6 +1,7 @@
 import React from "react";
 
 const Box = ({bgColor, borderColor, text, border, image}) => {
+  console.log(bgColor);
   const boxStyle = {
     backgroundColor: bgColor,
     borderColor: borderColor,
